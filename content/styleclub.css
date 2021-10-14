@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* début CSS */
+
+body {
+	background-color: #F1F2F4;
+}
+
+/* Section header */
+.block_club {
+	background: white;
+	width: 100%;
+	height: 200px;
+	padding-bottom: 150px;
+	box-shadow:grey -5px 5px 25px 5px;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.presentation_club {
+	text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+	line-height: 30px;
+	
+}
+
+h3 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0px;
+} 
+
+.titre_membres2 {
+	padding-bottom: 40px;
+}
+
+.titre {
+	padding-bottom: 40px;
+}
+
+
+
+/* Conception card */
+.card {
+	width: 450px;
+	height: 190px;
+	margin-left: 100px;
+	background: white;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: grey -5px 5px 25px 5px;
+}
+
+
+.img_jeanne {
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.jeanne {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.membre {
+	margin-bottom: 10px;
+}
+
+.realisation {
+	margin-bottom: 10px;
+}
+
+.contenu_carte {
+	margin-top: 0px;
+	margin-left: 20px;
+
+}
+
+
+.card_centre {
+	margin-left: 750px;
+	margin-top: 50px;
+}
+
+.block_membres {
+display: flex;
+justify-content: space-around;
+margin-top: 150px;
+margin-bottom: 80px;
+} 
+
+.block {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+/* Placement des articles*/
+
+.card_direction {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* .card_centre {
+	display: flex;
+	justify-content: space-around;
+} */
+
+
+/* Section notre atelier  */
+.atelier {
+	background: white;
+	width: auto;
+	height:800px;
+
+}
+
+.photo_texte-atelier1 {
+display: flex;
+margin-left: 5%;
+}
+
+.photo_texte-atelier2 {
+	display: flex;
+	margin-right: 5%;
+}
+
+.photo_atelier {
+	width: 450px;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.texte_1 {
+	margin-left:5%;
+	margin-right: 50%;
+	line-height: 150%;
+} 
+
+.texte_2 {
+	margin-left: 45%;
+	margin-right: 5%;
+	line-height: 150%;
+}
+
+.photo_atelier2 {
+
+}
+
+
+
+
+/* section notre atelier */
+
+
+
+
+
+
