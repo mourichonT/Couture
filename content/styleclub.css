@@ -145,40 +145,153 @@ table {
 
 /* début CSS */
 
+
+
+@font-face {
+	font-family: 'Sansation';
+	src: url("../src/sansation/Sansation_Light.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
 body {
 	background-color: #F1F2F4;
 }
 
-/* Section header */
+/* Nav */
+.brand {
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 20vh;
+}
+
+.logo {
+	padding-left: 5vh;
+}
+
+.nav__wrapper {
+	padding-right: 20vh;
+	list-style: none;
+	text-decoration: none;
+}
+
+.navbarbox {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+.site-header {
+	width: 100%;
+	left: 0px;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.site-header__wrapper {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	box-shadow: 0px 0px 33px 0px black;
+	position: relative;
+	z-index: 2;
+}
+
+@media (min-width: 600px) {
+	.site-header__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media (min-width: 600px) {
+	.nav__wrapper {
+		display: flex;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+@media (max-width: 599px) {
+	.nav__wrapper {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		left: 0;
+		z-index: -1;
+		background-color: #d9f0f7;
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(-100%);
+		transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+	}
+
+	.nav__wrapper.active {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.nav__item a {
+	display: block;
+	padding: 1.5rem 1rem;
+	font-family: "Sansation";
+	color: black;
+	text-decoration: none;
+}
+
+.nav__toggle {
+	display: none;
+}
+
+@media (max-width: 599px) {
+	.nav__toggle {
+		display: block;
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+	}
+}
+
+/* Fin nav */
+
+
+/* Section le club */
 .block_club {
 	background: white;
 	width: 100%;
-	height: 200px;
+	height: 270px;
 	padding-bottom: 150px;
-	box-shadow:grey -5px 5px 25px 5px;
+	box-shadow: grey -5px 5px 25px 5px;
+	font-family: "Sansation";
 }
 
 
 h2 {
 	text-align: center;
 	font-size: 1.5em;
-	padding-top: 50px;
-	padding-bottom: 60px;
+	padding-top: 4%;
+	padding-bottom: 3%;
 }
 
 .presentation_club {
 	text-align: center;
-	margin-left: 250px;
-	margin-right: 250px;
+	margin-left: 20%;
+	margin-right: 20%;
 	line-height: 30px;
-	
 }
 
 h3 {
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 0px;
-} 
+}
+
+/* Fin section le club */
 
 .titre_membres2 {
 	padding-bottom: 40px;
@@ -192,9 +305,9 @@ h3 {
 
 /* Conception card */
 .card {
-	width: 450px;
-	height: 190px;
-	margin-left: 100px;
+	width: 500px;
+	height: 250px;
+	margin-left:100px;
 	background: white;
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: grey -5px 5px 25px 5px;
@@ -203,12 +316,14 @@ h3 {
 
 .img_jeanne {
 	margin-top: 25px;
-	margin-left: 25px;
+	margin-left: 35px;
 }
 
 .jeanne {
 	font-weight: bold;
+	margin-top: 40px;
 	margin-bottom: 10px;
+	margin-right: 215px;
 }
 
 .membre {
@@ -220,31 +335,41 @@ h3 {
 }
 
 .contenu_carte {
-	margin-top: 0px;
-	margin-left: 20px;
-
+	margin-top: 5px;
+	margin-left: 25px;
+	margin-right: 25px;
+	flex-wrap: wrap ;
 }
+
+/* Fin conception card */
 
 
 .card_centre {
-	margin-left: 750px;
-	margin-top: 50px;
+	margin-left: 700px;
 }
 
 .block_membres {
-display: flex;
-justify-content: space-around;
-margin-top: 150px;
-margin-bottom: 80px;
-} 
+	display: flex;
+	justify-content: space-around;
+	margin-top: 150px;
+	margin-bottom: 80px;
+	flex-wrap: wrap;
+}
 
 .block {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+
 }
 
+.font {
+	margin-left: 100px;
+}
 
-
+.font_centre {
+	margin-left: 30px;
+}
 
 /* Placement des articles*/
 
@@ -253,58 +378,120 @@ margin-bottom: 80px;
 	justify-content: space-around;
 }
 
-/* .card_centre {
-	display: flex;
-	justify-content: space-around;
-} */
-
 
 /* Section notre atelier  */
+.titre_atelier {
+	background: white;
+	text-align: center;
+}
+
 .atelier {
+	display: flex;
 	background: white;
 	width: auto;
-	height:800px;
-
+	height: 1000px;
+	flex-wrap: wrap;
 }
 
 .photo_texte-atelier1 {
-display: flex;
-margin-left: 5%;
+	display: flex;
+	margin-left: 80px;
+	padding-top: 50px;
+	flex-wrap: wrap;
+}
+
+.texte_1 {
+	width: 600px;
+	height: 180px;
+	margin-left: 50px;
+	line-height: 35px;
+	margin-top: 50px;
+	font-family: "Sansation";
+}
+
+.img_atelier2 {
+	margin-left: 600px;
+	margin-top:350px;
 }
 
 .photo_texte-atelier2 {
 	display: flex;
-	margin-right: 5%;
+	margin-top: -700px;
 }
 
 .photo_atelier {
-	width: 450px;
+	width:400px;
 	border-radius: 20px 20px 20px 20px;
 }
 
-.texte_1 {
-	margin-left:5%;
-	margin-right: 50%;
-	line-height: 150%;
-} 
-
 .texte_2 {
-	margin-left: 45%;
-	margin-right: 5%;
-	line-height: 150%;
+	width: 600px;
+	height: 180px;
+	margin-left: 700px;
+	margin-right: -550px;
+	margin-top: 400px;
+	line-height: 35px;
+	text-align: end;
+	font-family: "Sansation";
 }
 
-.photo_atelier2 {
+/*Fin section notre atelier */
 
+
+/* Footer */
+.color_footer {
+	display: flex;
+	width: 100%;
+	height: 310px;
+	background: #E6C7C2;
+	color: #ffffff;
 }
 
+.img_logo_rose {
+	width: 300px;
+	height: 300px;
+	margin-left: 25px;
+	margin-right: 70px;
+}
 
+.trait {
+	width: 15px; 
+	height: 220px;
+	margin-top: 50px;
+	margin-right: 120px;
+	border-left: white solid 4px;
+}
 
+.infos_contact {
+	margin-top: 80px;
+	margin-bottom: 30px;	
+}
 
-/* section notre atelier */
+.titre_infos_contacts {
+	margin-bottom: 20px;
+}
 
+.nom_prenom {
+	margin-bottom: 20px;
+}
 
+.adresse {
+	line-height: 18px;
+} 
+.icone_fb {
+	width: 20px;
+	height: 20px;
+}
 
+.icone_insta {
+	width: 20px;
+	height: 20px;
+}
 
-
-
+.bouton_contact {
+	width: 150px;
+	height: 20px;
+	margin-left: 700px;
+	margin-top: 150px;
+	background: #e41616;
+}
