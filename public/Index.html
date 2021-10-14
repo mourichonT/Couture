@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 
     <link rel="stylesheet" href="style.css" />
     <title>COUTURE, l'association des juniors</title>
@@ -30,61 +31,179 @@
                 </ul>
             </nav>
         </div>
-
-        <main>
-            <section>
-                <article class="container">
-                    <div class="colonedroite">
-                        <div class="article">
-                            <h1 class="texte_entete">ceci est un texte</h1>
+    </header>
+    <main>
+        <section>
+            <article class="container">
+                <div class="colonedroite">
+                    <div class="article">
+                        <h1 class="texte_entete">Les réalisations de nos membres sont le fruit d’une passion partagée</h1>
+                        <p class="firstparagraphe">Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel. Mel facilis sensibus petentium in, ne ignota mollis suavitate mei, modus reque signiferumque in cum. Ut </p>
+                        <div class="buttonform">
+                            <a href="https://www.w3docs.com/" class="button">Voir nos réalisations</a>
                         </div>
-                        <img class="imgaiguille" src="../src/images/Vector.png" alt="image de machine à coudre">
-
                     </div>
-
-                </article>
-
-            </section>
-            <div class="container2">
-                <div class="icone1">
-                    <img class="iconecenter" src="../src/images/logoaguille.png" alt="logo de l'aiguille">
-                    <p class="texticone">Lorem ipsum dolor sit amet, </br> cum sapientem </p>
+                    <img class="imgaiguille" src="../src/images/Vector.png" alt="image de machine à coudre">
                 </div>
-                <div class="icone2">
-                    <img class="iconecenter" src="../src/images/logomachine.png" alt="logo de la machine a coudre">
-                    <p class="texticone">Lorem ipsum dolor sit amet, </br> cum sapientem </p>
-                </div>
-                <div class="icone3">
-                    <img class="iconecenter" src="../src/images/logofils.png" alt="logo du fils a aiguille">
-                    <p class="texticone">Lorem ipsum dolor sit amet, </br> cum sapientem </p>
-                </div>
+            </article>
+        </section>
+        <div class="container2">
+            <div class="icone1">
+                <img class="iconecenter" src="../src/images/logoaguille.png" alt="logo de l'aiguille">
+                <p class="texticone">Lorem ipsum dolor sit amet, </br> cum sapientem </p>
             </div>
+            <div class="icone2">
+                <img class="iconecenter" src="../src/images/logomachine.png" alt="logo de la machine a coudre">
+                <p class="texticone">Lorem ipsum dolor sit amet, </br> csum sapientem </p>
+            </div>
+            <div class="icone3">
+                <img class="iconecenter" src="../src/images/logofils.png" alt="logo du fils a aiguille">
+                <p class="texticone">Lorem ipsum dolor sit amet, </br> cum sapientem </p>
+            </div>
+        </div>
+        <!-- card -->
+        <section>
             <div class="container3">
                 <div class="titre_centre">
-                    <h3>La présidente</h3>
+                    <h3>Les membres qui composent notre club</h3>
                 </div>
-                <div class="card card_centre">
-                    <div class="card_direction">
-                        <div class="img_jeanne">
-                            <img src="../src/images/jeanne.png" alt="Image de la formatrice couture adulte">
-                        </div>
-                        <div class="contenu_carte">
-                            <h3 class="jeanne">Jeanne Doe</h3>
-                            <p class="membre">Membre depuis:</p>
-                            <p class="realisation">Nombre de réalisation</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                        </div>
+
+                <!--Caroussel-->
+
+                <!-- Flickity HTML init -->
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell">
+                        <article class="card">
+                            <div class="card_box">
+                                <div class="img_jeanne">
+                                    <img src="../src/images/jeanne.png" alt="Image de la formatrice couture adulte">
+                                </div>
+                                <div class="contenu_carte">
+                                    <h3 class="jeanne">Jeanne Doe</h3>
+                                    <p class="membre">Membre depuis:</p>
+                                    <p class="realisation">Nombre de réalisation</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_box">
+                                <div class="img_jeanne">
+                                    <img src="../src/images/jeanne.png" alt="Image de la formatrice couture adulte">
+                                </div>
+                                <div class="contenu_carte">
+                                    <h3 class="jeanne">Jeanne Doe</h3>
+                                    <p class="membre">Membre depuis:</p>
+                                    <p class="realisation">Nombre de réalisation</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </article>
                     </div>
+                    <div class="gallery-cell">
+                        <article class="card">
+                            <div class="card_box">
+                                <div class="img_jeanne">
+                                    <img src="../src/images/jeanne.png" alt="Image de la formatrice couture adulte">
+                                </div>
+                                <div class="contenu_carte">
+                                    <h3 class="jeanne">Jeanne Doe</h3>
+                                    <p class="membre">Membre depuis:</p>
+                                    <p class="realisation">Nombre de réalisation</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_box">
+                                <div class="img_jeanne">
+                                    <img src="../src/images/jeanne.png" alt="Image de la formatrice couture adulte">
+                                </div>
+                                <div class="contenu_carte">
+                                    <h3 class="jeanne">Jeanne Doe</h3>
+                                    <p class="membre">Membre depuis:</p>
+                                    <p class="realisation">Nombre de réalisation</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="gallery-cell">
+                        <article class="card">
+                            <div class="card_box">
+                                <div class="img_jeanne">
+                                    <img src="../src/images/jeanne.png" alt="Image de la formatrice couture adulte">
+                                </div>
+                                <div class="contenu_carte">
+                                    <h3 class="jeanne">Jeanne Doe</h3>
+                                    <p class="membre">Membre depuis:</p>
+                                    <p class="realisation">Nombre de réalisation</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_box">
+                                <div class="img_jeanne">
+                                    <img src="../src/images/jeanne.png" alt="Image de la formatrice couture adulte">
+                                </div>
+                                <div class="contenu_carte">
+                                    <h3 class="jeanne">Jeanne Doe</h3>
+                                    <p class="membre">Membre depuis:</p>
+                                    <p class="realisation">Nombre de réalisation</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <!--button-->
+                <div class="buttonform">
+                    <a href="https://www.w3docs.com/" class="button">Voir nos membres</a>
                 </div>
 
             </div>
-            <!-- card -->
+        </section>
+        <section>
+            <div class="container4">
+                <div class="article2">
+                    <h1 class="texte_entete">Les réalisations de nos membres sont le fruit d’une passion partagée</h1>
+                    <p class="firstparagraphe">Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel. Mel facilis sensibus petentium in, ne ignota mollis suavitate mei, modus reque signiferumque in cum. Ut </p>
+                    <div class="buttonform">
+                        <a href="https://www.w3docs.com/" class="button">Voir nos expositions</a>
+                    </div>
+                </div>
 
-        </main>
+                <div class="patchwork">
+                    <div class="wrapper_grid">
+                        <div class="box1">Un</div>
+                        <div class="box2">Deux</div>
+                        <div class="box3">Trois</div>
+                        <div class="box4">Quatre</div>
+                        <div class="box5">Cinq</div>
+                        <div class="box6">Six</div>
+                        <div class="box7">Sept</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        </div>
+
+
+    </main>
 
 </body>
 
-<script type="text/javascript" src="../js/navbar.js"></script>
+<script type="text/javascript " src="../js/navbar.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js "></script>
+
 
 </html>
