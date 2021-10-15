@@ -108,6 +108,21 @@
 
 /*-------------------------------------------------------------------css first place ---------------------------------*/
 
+.button {
+    background-color: #E6C7C2;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    width: 225px;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+}
+
 .imgaiguille {
     display: block;
     margin-left: auto;
@@ -118,11 +133,11 @@
 
 .container {
     position: relative;
-    background: url("../src/images/img\ aiguile.jpg") no-repeat;
-    /* background-size: cover; */
+    background: url("../src/images/robeNoire.jpg") no-repeat;
+    background-size: cover;
     display: flex;
     /* width: 78%; */
-    /* background-size: 78%; */
+    background-size: 70%;
     /* position: absolute; */
     /* background-color: grey; */
 }
@@ -154,10 +169,20 @@
 }
 
 .texte_entete {
+    width: 60%;
+    text-align: center;
     font-family: "Sansation_regular";
     font-size: 20px;
     height: auto;
     right: 0%;
+}
+
+
+/*...................H2....................*/
+
+h3 {
+    font-family: "Sansation_regular";
+    font-size: 20px;
 }
 
 
@@ -177,29 +202,69 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: aquamarine;
+    background-color: #e5e5e5;
     width: auto;
-    height: 100vh;
+    height: auto;
 }
 
 #carousel {
     width: 80%;
     position: relative;
-    height: 400px;
+    height: 70vh;
     /* top: 50%; */
     /* transform: translateY(-50%); */
     overflow: hidden;
+    margin-top: 5vh;
+    /* margin-bottom: 5vh; */
 }
+
+
+/* .boxshadow {
+    width: 400px;
+    height: 400px;
+    box-shadow: rgb(65, 65, 65) -5px 5px 25px 5px;
+} */
 
 #carousel div {
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
+    background-color: white;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
 }
 
-#carousel div img {
+.border_radius {
+    /* padding: 10px; */
+    border-radius: 10px 10px 10px 10px !important;
+    height: 390px;
+    box-shadow: rgb(65, 65, 65) 0px 38px 48px -18px;
+}
+
+.carousselimg {
+    background-color: #ffffff;
     width: 400px;
     transition: width 1s;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/* .carousselrea #carousel div div {
+    display: unset;
+} */
+
+
+/* #carousel div img {
+    width: 400px;
+    transition: width 1s;
+} */
+
+.card_caroussel {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 #carousel div.hideLeft {
@@ -208,7 +273,7 @@ main {
     transform: translateY(50%) translateX(-50%);
 }
 
-#carousel div.hideLeft img {
+#carousel div.hideLeft .carousselimg {
     width: 200px;
 }
 
@@ -218,7 +283,7 @@ main {
     transform: translateY(50%) translateX(-50%);
 }
 
-#carousel div.hideRight img {
+#carousel div.hideRight .carousselimg {
     width: 200px;
 }
 
@@ -228,7 +293,7 @@ main {
     transform: translateY(50px) translateX(-50%);
 }
 
-#carousel div.prev img {
+#carousel div.prev .carousselimg {
     width: 300px;
 }
 
@@ -239,7 +304,7 @@ main {
     opacity: 0.7;
 }
 
-#carousel div.prevLeftSecond img {
+#carousel div.prevLeftSecond .carousselimg {
     width: 200px;
 }
 
@@ -255,7 +320,7 @@ main {
     transform: translateY(50px) translateX(-50%);
 }
 
-#carousel div.next img {
+#carousel div.next .carousselimg {
     width: 300px;
 }
 
@@ -266,7 +331,7 @@ main {
     opacity: 0.7;
 }
 
-#carousel div.nextRightSecond img {
+#carousel div.nextRightSecond .carousselimg {
     width: 200px;
 }
 
@@ -274,7 +339,8 @@ main {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 5%;
+    margin-top: -3%;
+    margin-bottom: 5vh;
     /* left: 50%; */
     /* transform: translateX(-50%); */
     /* bottom: 10px; */
@@ -286,6 +352,27 @@ main {
 
 #next {
     margin-left: 10px;
+}
+
+.titrecard {
+    margin: 0;
+    text-align: center;
+}
+
+.textecard {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* container 3 patchwork */
+
+.container3 {
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
 }
 
 
