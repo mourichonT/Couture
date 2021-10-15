@@ -1,11 +1,11 @@
 function moveToSelected(element) {
-
+    let selected = "";
     if (element == "next") {
-        var selected = $(".selected").next();
+        selected = $(".selected").next();
     } else if (element == "prev") {
-        var selected = $(".selected").prev();
+        selected = $(".selected").prev();
     } else {
-        var selected = element;
+        selected = element;
     }
 
     var next = $(selected).next();
