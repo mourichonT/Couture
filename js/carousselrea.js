@@ -13,16 +13,16 @@ function moveToSelected(element) {
     var prevSecond = $(prev).prev();
     var nextSecond = $(next).next();
 
-    $(selected).removeClass().addClass("selected");
+    $(selected).removeClass().addClass("border_radius selected");
 
-    $(prev).removeClass().addClass("prev");
-    $(next).removeClass().addClass("next");
+    $(prev).removeClass().addClass("border_radius prev");
+    $(next).removeClass().addClass("border_radius next");
 
-    $(nextSecond).removeClass().addClass("nextRightSecond");
-    $(prevSecond).removeClass().addClass("prevLeftSecond");
+    $(nextSecond).removeClass().addClass("border_radius nextRightSecond");
+    $(prevSecond).removeClass().addClass("border_radius prevLeftSecond");
 
-    $(nextSecond).nextAll().removeClass().addClass('hideRight');
-    $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+    $(nextSecond).nextAll().removeClass().addClass('border_radius hideRight');
+    $(prevSecond).prevAll().removeClass().addClass('border_radius hideLeft');
 
 }
 
