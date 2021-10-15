@@ -1,0 +1,172 @@
+   /* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+   
+   @font-face {
+       font-family: 'Sansation';
+       src: url("../src/sansation/Sansation_Light.ttf") format("truetype");
+   }
+   
+   @font-face {
+       font-family: "Sansation_regular";
+       src: url(../src/sansation/Sansation_Regular.ttf) format("truetype");
+   }
+   
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+   .brand {
+       font-weight: bold;
+       font-size: 20px;
+       padding-left: 20vh;
+   }
+   
+   .logo {
+       padding-left: 5vh;
+   }
+   
+   .nav__wrapper {
+       padding-right: 20vh;
+       list-style: none;
+       text-decoration: none;
+   }
+   
+   .navbarbox {
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-top: 0px;
+   }
+   
+   .site-header {
+       width: 100%;
+       left: 0px;
+       position: relative;
+       background-color: #ffffff;
+   }
+   
+   .site-header__wrapper {
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       box-shadow: 0px 0px 33px 0px black;
+       position: relative;
+       z-index: 2;
+   }
+   
+   @media (min-width: 600px) {
+       .site-header__wrapper {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-top: 0;
+           padding-bottom: 0;
+       }
+   }
+   
+   @media (min-width: 600px) {
+       .nav__wrapper {
+           display: flex;
+           position: relative;
+           z-index: 2;
+       }
+   }
+   
+   @media (max-width: 599px) {
+       .nav__wrapper {
+           position: absolute;
+           top: 100%;
+           right: 0;
+           left: 0;
+           z-index: -1;
+           background-color: #d9f0f7;
+           visibility: hidden;
+           opacity: 0;
+           transform: translateY(-100%);
+           transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+       }
+       .nav__wrapper.active {
+           visibility: visible;
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+   
+   .nav__item a {
+       display: block;
+       padding: 1.5rem 1rem;
+       font-family: "Sansation";
+       color: black;
+       text-decoration: none;
+   }
+   
+   .nav__toggle {
+       display: none;
+   }
+   
+   @media (max-width: 599px) {
+       .nav__toggle {
+           display: block;
+           position: absolute;
+           right: 1rem;
+           top: 1rem;
+       }
+   }
+   /*-------------------------------------------------------------------css first place ---------------------------------*/
+   
+   .imgaiguille {
+       display: block;
+       margin-left: auto;
+       /* margin-right: auto; */
+       /* height: 100vh; */
+       width: 45%;
+   }
+   
+   .container {
+       position: relative;
+       background: url("../src/images/robeNoire.jpg") no-repeat;
+       background-size: cover;
+       display: flex;
+       /* width: 78%; */
+       /* background-size: 78%; */
+       /* position: absolute; */
+       /* background-color: grey; */
+   }
+   
+   .colonegauche {
+       width: 50%;
+       height: auto;
+   }
+   
+   .colonedroite {
+       display: flex;
+       justify-content: end;
+       align-items: center;
+       width: 100%;
+   }
+   
+   .article {
+       z-index: 20;
+       position: absolute;
+       width: 30%;
+       right: 2%;
+   }
+   
+   .firstparagraphe {
+       font-family: sans-serif;
+       font-size: 13px;
+       height: auto;
+       right: 0%;
+   }
+   
+   .texte_entete {
+       font-family: "Sansation_regular";
+       font-size: 20px;
+       height: auto;
+       right: 0%;
+   }
+   /* ...........caroussel................... */
+   
+   html,
+   body,
+   main width: 100% height: 100% margin: 0 padding: 0 #carousel position: relative height: 400px top: 50% transform: translateY(-50%) overflow: hidden div position: absolute transition: transform 1s,
+   left 1s,
+   opacity 1s,
+   z-index 0s opacity: 1 img width: 400px transition: width 1s &.hideLeft left: 0% opacity: 0 transform: translateY(50%) translateX(-50%) img width: 200px &.hideRight left: 100% opacity: 0 transform: translateY(50%) translateX(-50%) img width: 200px &.prev z-index: 5 left: 30% transform: translateY(50px) translateX(-50%) img width: 300px &.prevLeftSecond z-index: 4 left: 15% transform: translateY(50%) translateX(-50%) opacity: .7 img width: 200px &.selected z-index: 10 left: 50% transform: translateY(0px) translateX(-50%) &.next z-index: 5 left: 70% transform: translateY(50px) translateX(-50%) img width: 300px &.nextRightSecond z-index: 4 left: 85% transform: translateY(50%) translateX(-50%) opacity: .7 img width: 200px .buttons position: fixed left: 50% transform: translateX(-50%) bottom: 10px
