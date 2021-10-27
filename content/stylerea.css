@@ -9,6 +9,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 .brand {
     font-weight: bold;
     font-size: 20px;
@@ -77,6 +78,7 @@
         transform: translateY(-100%);
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     }
+
     .nav__wrapper.active {
         visibility: visible;
         opacity: 1;
@@ -162,10 +164,12 @@
 }
 
 .firstparagraphe {
+    text-align: justify;
     font-family: sans-serif;
     font-size: 13px;
     height: auto;
     right: 0%;
+    margin: 20px;
 }
 
 .texte_entete {
@@ -237,8 +241,8 @@ main {
 .border_radius {
     /* padding: 10px; */
     border-radius: 10px 10px 10px 10px !important;
-    height: 390px;
-    box-shadow: rgb(65, 65, 65) 0px 38px 48px -18px;
+    height: 60%;
+    box-shadow: rgb(65, 65, 65) 0px 15px 10px -18px;
 }
 
 .carousselimg {
@@ -370,9 +374,234 @@ main {
 /* container 3 patchwork */
 
 .container3 {
+    display: flex;
     width: 100%;
-    height: 500px;
+    height: 75vh;
+    background-color: #E6C7C2;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article3 {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    width: 30%;
+    left: 2%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+/*........patchwork..................*/
+
+.patchwork {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    width: 60%;
+    left: 2%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.wrapper_grid {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 50vh;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-color: darksalmon;
+    background-image: url("../src/images/patchwork.jpg");
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    /* background-color: hotpink; */
+    background-image: url("../src/images/filetRose.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url("../src/images/materielRecycle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: green;
+}
+
+.box4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-image: url("../src/images/pantalonRose.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: yellow;
+}
+
+.box5 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-image: url("../src/images/robeFleurs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+
+.box6 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    background-image: url("../src/images/masqueVert.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.box7 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    background-image: url("../src/images/tissus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkviolet;
+}
+
+.box8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    background-image: url("");
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    background-color: darkviolet;
+}
+
+.box9 {
+    grid-column-start: 11;
+    /* add comment */
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkviolet;
+}
+
+.box10 {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkviolet;
+}
+
+.box11 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkviolet;
+}
+
+.box12 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 13;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkviolet;
+}
+
+.box13 {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 13;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkviolet;
+}
+
+.box14 {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkviolet;
+}
+
+.buttonform {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
     background-color: #ffffff;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    color: #E6C7C2;
+    font-family: "Sansation";
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    width: 225px;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+h2 {
+    width: 100%;
+    font-family: "Sansation_regular";
+    font-size: 20px;
+    height: auto;
+    right: 0%;
+    color: white;
+    margin: 20px;
+}
+
+.textcolor {
+    color: white;
+    margin: 20px;
+    text-align: justify;
 }
 
 
