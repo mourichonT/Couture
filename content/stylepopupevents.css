@@ -151,16 +151,34 @@ table {
 
 
 body {
-    background: #F1F2F4;;
+    background: white;
 }
 
+/* .color {
+    width: 800px;
+    height: 1000px;
+background: rgb(136, 95, 80);
+} */
+
+/* Patchwork */
 .patchwork {
+    width: 650px;
+    height: 550px;
+    margin-left: 100px;
+    /* background: coral; */
+}
+
+.tableau {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 10px;
-    grid-template:
-    ""
+    grid-row-gap: 10px;
+    width: 450px;
+    height: 500px;
+    margin-left: 30px;
+    margin-top: 50px;
+    /* background: plum; */
 }
 
 .un {

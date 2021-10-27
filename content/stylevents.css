@@ -148,7 +148,6 @@ table {
 	font-family: "Sansation_regular";
 	src: url(../src/sansation/Sansation_Regular.ttf) format("truetype");
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
 body {
@@ -288,6 +287,28 @@ h2 {
 	line-height: 30px;
 	text-align: center;
 }
+
+.buttonform {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.button {
+	background-color: #E6C7C2;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+	width: 225px;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+}
+
 
 .enCours {
 	margin-top: 50px;
