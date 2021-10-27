@@ -152,11 +152,6 @@ table {
 	src: url("../src/sansation/Sansation_Light.ttf") format("truetype");
 }
 
-@font-face {
-	font-family: "Sansation_regular";
-	src: url(../src/sansation/Sansation_Regular.ttf) format("truetype");
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
@@ -267,8 +262,6 @@ body {
 
 /* Section le club */
 .block_club {
-	display: flex;
-	flex-direction: column;
 	background: white;
 	width: 100%;
 	height: 270px;
@@ -314,7 +307,7 @@ h3 {
 .card {
 	width: 500px;
 	height: 250px;
-	margin-left: 100px;
+	margin-left:100px;
 	background: white;
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: grey -5px 5px 25px 5px;
@@ -345,14 +338,14 @@ h3 {
 	margin-top: 5px;
 	margin-left: 25px;
 	margin-right: 25px;
-	flex-wrap: wrap;
+	flex-wrap: wrap ;
 }
 
 /* Fin conception card */
 
 
 .card_centre {
-	/* margin-left: 700px; */
+	margin-left: 700px;
 }
 
 .block_membres {
@@ -367,7 +360,6 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-items: center;
 
 }
 
@@ -389,12 +381,13 @@ h3 {
 
 /* Section notre atelier  */
 .titre_atelier {
+	background: white;
 	text-align: center;
 }
 
 .atelier {
 	display: flex;
-
+	background: white;
 	width: auto;
 	height: 1000px;
 	flex-wrap: wrap;
@@ -409,37 +402,34 @@ h3 {
 
 .texte_1 {
 	width: 600px;
-	/* height: 180px; */
+	height: 180px;
 	margin-left: 50px;
 	line-height: 35px;
 	margin-top: 50px;
 	font-family: "Sansation";
 }
 
-.bgc-white {
-	background-color: #fff;
-}
-
-.gutter-rl-50 {
-	margin: 0 50px;
+.img_atelier2 {
+	margin-left: 600px;
+	margin-top:350px;
 }
 
 .photo_texte-atelier2 {
 	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	width: 100%;
-	flex-wrap: wrap;
+	margin-top: -700px;
 }
 
 .photo_atelier {
-	width: 400px;
+	width:400px;
 	border-radius: 20px 20px 20px 20px;
 }
 
 .texte_2 {
 	width: 600px;
-	margin-right: 25px;
+	height: 180px;
+	margin-left: 700px;
+	margin-right: -550px;
+	margin-top: 400px;
 	line-height: 35px;
 	text-align: end;
 	font-family: "Sansation";
@@ -465,7 +455,7 @@ h3 {
 }
 
 .trait {
-	width: 15px;
+	width: 15px; 
 	height: 220px;
 	margin-top: 50px;
 	margin-right: 120px;
@@ -474,7 +464,7 @@ h3 {
 
 .infos_contact {
 	margin-top: 80px;
-	margin-bottom: 30px;
+	margin-bottom: 30px;	
 }
 
 .titre_infos_contacts {
@@ -487,8 +477,7 @@ h3 {
 
 .adresse {
 	line-height: 18px;
-}
-
+} 
 .icone_fb {
 	width: 20px;
 	height: 20px;
@@ -506,35 +495,3 @@ h3 {
 	margin-top: 150px;
 	background: #e41616;
 }
-
-/*
-@media screen and (max-width: 767px) {
-.photo_texte-atelier1 {
-	color: rgb(219, 82, 18);
-	width: 400px;
-		
-}
-}
-
-
-
- @media screen and  (max-width:767px) {
-	.photo_atelier {
-		padding-bottom: 10px;
-	}	
-
-
-@media screen and (max-width: 767px) {
-	.card_direction {
-		display: flex;
-		justify-content: start;
-		width: 200px;
-		margin-top: 15px;
-	}
-} 
-
-@media screen and (max-width: 767px) {
-	.font_centre:{
-		margin-left: 10px;
-	}
-}*/
