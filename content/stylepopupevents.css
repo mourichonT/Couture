@@ -137,17 +137,213 @@ table {
 
 
 /* Début CSS */
+/* @font-face {
+	font-family:'Sansation';
+	src: url("../src/sansation/Sansation_Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Sansation_regular";
+	src: url(../src/sansation/Sansation_Regular.ttf) format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+
 
 body {
-    background: #F1F2F4;;
+    background: white;
 }
 
+/* .color {
+    width: 800px;
+    height: 1000px;
+background: rgb(136, 95, 80);
+} */
+
+/* Patchwork */
 .patchwork {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-template:
-    ""
+    width: 650px;
+    height: 550px;
+    margin-left: 100px;
+    /* background: coral; */
 }
 
+.tableau {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 450px;
+    height: 500px;
+    margin-left: 30px;
+    margin-top: 50px;
+    /* background: plum; */
+}
+
+.un {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image:url(../src/images/Rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deux {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image:url(../src/images/Rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trois {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image:url(../src/images/Rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quatre {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-image:url(../src/images/Rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.cinq {
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    background-image:url(../src/images/Rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.six{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    background-image:url(../src/images/Rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sept{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    background-image:url(../src/images/Rose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Fin patchwork */
+
+
+/* Début renseignements */
+.renseignement {
+    width: 450px; 
+    margin-left: 130px;
+
+}
+
+.case {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    border-radius: 5px 5px 5px 5px;
+    background: #F1F2F4;
+    font-family: "Roboto";}
+
+
+.description {
+    /* width: 500px; */
+    height: 150px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #F1F2F4;
+    font-family: "Roboto";
+}
+
+/* Fin renseignement*/
+
+/* Dernière image */
+.img_bas {
+width: 450px;
+height: 200px;
+margin-top: 50px;
+margin-left: 130px;
+margin-bottom: 200px;
+border-radius: 20px 20px 20px 20px;
+}
+/* Fin dernière image */
+
+
+/* CSS volet */
+
+#volet {
+    width: 100px;
+    height: 1000px;
+	padding: 10px;
+	/* background: #6B9A49; color: #fff;	 */
+}
+#volet a.ouvrir {
+	padding: 10px 25px;
+	/* background: #555;
+	color: #fff;
+	text-decoration: none; */
+}
+#volet {
+	position: relative;
+	left: -270px; top: 55px;
+}
+#volet a.ouvrir {
+	position: absolute;
+	right: -88px;
+	top: 150px;
+
+	/* quelques styles CSS3 */
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+
+	border-radius: 0 0 8px 8px;
+}
+#volet {
+	-webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+#volet:target {
+	left: 0;
+}
+/*#volet_clos:target #volet {
+	 retourne à ta place 
+}*/
+#volet a.fermer {
+	display: none;
+}
+#volet_clos:target #volet {
+	left: -270px;
+}
+#volet:target a.ouvrir {
+	display: none;
+}
+#volet:target a.fermer {
+	display: block;
+}
