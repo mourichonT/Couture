@@ -449,3 +449,62 @@
                 background-repeat: no-repeat;
                 background-color: darkviolet;
             }
+            /*Footer*/
+            
+            .color_footer {
+                display: flex;
+                width: 100%;
+                height: 310px;
+                background: #E6C7C2;
+                color: #ffffff;
+            }
+            
+            .img_logo_rose {
+                width: 300px;
+                height: 300px;
+                margin-left: 25px;
+                margin-right: 70px;
+            }
+            
+            .trait {
+                width: 15px;
+                height: 220px;
+                margin-top: 50px;
+                margin-right: 120px;
+                border-left: white solid 4px;
+            }
+            
+            .infos_contact {
+                margin-top: 80px;
+                margin-bottom: 30px;
+            }
+            
+            .titre_infos_contacts {
+                margin-bottom: 20px;
+            }
+            
+            .nom_prenom {
+                margin-bottom: 20px;
+            }
+            
+            .adresse {
+                line-height: 18px;
+            }
+            
+            .icone_fb {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .icone_insta {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .bouton_contact {
+                width: 150px;
+                height: 20px;
+                margin-left: 700px;
+                margin-top: 150px;
+                background: #e41616;
+            }
