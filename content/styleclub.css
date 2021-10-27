@@ -455,86 +455,145 @@ h3 {
 	height: 310px;
 	background: #E6C7C2;
 	color: #ffffff;
+	/* flex-wrap: wrap; */
 }
 
 .img_logo_rose {
+	display: flex;
+	justify-content: center;
 	width: 300px;
 	height: 300px;
-	margin-left: 25px;
-	margin-right: 70px;
+	/* margin-left: 25px;
+	margin-right: 70px; */
 }
 
 .trait {
 	width: 15px;
 	height: 220px;
 	margin-top: 50px;
-	margin-right: 120px;
+	margin-right: 50px;
 	border-left: white solid 4px;
 }
 
+.contact {
+	width: 190px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	/*align-items: center;
+	 flex-wrap: wrap; */
+}
+
 .infos_contact {
-	margin-top: 80px;
-	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	line-height: 35px;
+	/*margin-top: 80px;
+	 margin-bottom: 30px; */
 }
 
 .titre_infos_contacts {
-	margin-bottom: 20px;
+	width: 190px;
+	display: flex;
+	/* align-items: start; */
 }
 
-.nom_prenom {
-	margin-bottom: 20px;
+/* .nom_prenom {
 }
+	margin-bottom: 20px; */
 
 .adresse {
 	line-height: 18px;
 }
 
+.reseaux_sociaux {
+	display: flex;
+	margin-top: 15px;
+	/* align-items: center;  */
+}
+
 .icone_fb {
 	width: 20px;
 	height: 20px;
+	cursor: pointer;
+	/* display: flex; */
+
 }
 
 .icone_insta {
 	width: 20px;
 	height: 20px;
+	cursor: pointer;
+	/* display: flex; */
 }
 
-.bouton_contact {
-	width: 150px;
-	height: 20px;
-	margin-left: 700px;
+.buttonform {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 	margin-top: 150px;
-	background: #e41616;
+	flex-wrap: wrap;
 }
 
-/*
+.button {
+	background-color: #fff;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	color: #E6C7C2;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+	width: 225px;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+}
+
+
+
+
 @media screen and (max-width: 767px) {
-.photo_texte-atelier1 {
-	color: rgb(219, 82, 18);
-	width: 400px;
-		
-}
-}
-
-
-
- @media screen and  (max-width:767px) {
-	.photo_atelier {
-		padding-bottom: 10px;
-	}	
-
-
-@media screen and (max-width: 767px) {
-	.card_direction {
-		display: flex;
-		justify-content: start;
-		width: 200px;
-		margin-top: 15px;
+	.color_footer {
+		flex-direction: column;
+		height: auto;
 	}
-} 
+}
 
 @media screen and (max-width: 767px) {
-	.font_centre:{
-		margin-left: 10px;
+	.logo_rose {
+		margin-left: 130px;
 	}
-}*/
+
+}
+
+@media screen and (max-width: 767px) {
+	.contact {
+		margin-left: 210px;
+		margin-top: 5px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.trait {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.bouton_contact {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.buttonform {
+		margin-top: 50px;
+	}
+
+}
+

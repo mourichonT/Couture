@@ -137,7 +137,7 @@ table {
 
 
 /* Début CSS */
-@font-face {
+/* @font-face {
 	font-family:'Sansation';
 	src: url("../src/sansation/Sansation_Light.ttf") format("truetype");
 }
@@ -147,7 +147,7 @@ table {
 	src: url(../src/sansation/Sansation_Regular.ttf) format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 
 
 body {
@@ -292,3 +292,58 @@ margin-bottom: 200px;
 border-radius: 20px 20px 20px 20px;
 }
 /* Fin dernière image */
+
+
+/* CSS volet */
+
+#volet {
+    width: 100px;
+    height: 1000px;
+	padding: 10px;
+	/* background: #6B9A49; color: #fff;	 */
+}
+#volet a.ouvrir {
+	padding: 10px 25px;
+	/* background: #555;
+	color: #fff;
+	text-decoration: none; */
+}
+#volet {
+	position: relative;
+	left: -270px; top: 55px;
+}
+#volet a.ouvrir {
+	position: absolute;
+	right: -88px;
+	top: 150px;
+
+	/* quelques styles CSS3 */
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+
+	border-radius: 0 0 8px 8px;
+}
+#volet {
+	-webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+#volet:target {
+	left: 0;
+}
+/*#volet_clos:target #volet {
+	 retourne à ta place 
+}*/
+#volet a.fermer {
+	display: none;
+}
+#volet_clos:target #volet {
+	left: -270px;
+}
+#volet:target a.ouvrir {
+	display: none;
+}
+#volet:target a.fermer {
+	display: block;
+}
