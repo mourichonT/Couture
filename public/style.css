@@ -19,9 +19,34 @@
                 font-size: 20px;
                 padding-left: 20vh;
             }
+            .logo{
+                margin-right: 5vh;
+                position: relative;
+                display: inline-block;
+               
+            }
+
+            .format{
+                border-radius: 100px;
+                width: 25%;
+                margin-left:20vh;
             
-            .logo {
-                padding-left: 5vh;
+            }
+            .logo .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+                box-shadow: 0px 0px 12px -3px gray;
+              
+                
+
+            }
+            .logo:hover .img-top{
+                display:inline;
+                
+               
             }
             
             .nav__wrapper {
@@ -220,11 +245,11 @@
             
             .card_box {
                 display: flex;
-                width: 450px;
-                height: 190px;
+                width: 45%;
+                height: 225px;
                 background: white;
                 border-radius: 20px 20px 20px 20px;
-                box-shadow: grey -5px 5px 25px 5px;
+                box-shadow: grey 0px 9px 15px -5px;
             }
             
             .card {
@@ -339,7 +364,7 @@
             .container4 {
                 display: flex;
                 width: 100%;
-                height: 75vh;
+                height: 100%;
                 background-color: #E5E5E5;
                 justify-content: space-around;
                 align-items: center;
@@ -449,3 +474,178 @@
                 background-repeat: no-repeat;
                 background-color: darkviolet;
             }
+
+
+
+            /* Footer */
+.color_footer {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: #E6C7C2;
+	color: #ffffff;
+	/* flex-wrap: wrap; */
+}
+
+.img_logo_rose {
+	display: flex;
+	justify-content: center;
+	/* margin-left: 25px;
+	margin-right: 70px; */
+}
+
+.trait {
+	width: 15px;
+	height: 220px;
+	margin-top: 50px;
+	margin-right: 50px;
+	border-left: white solid 4px;
+}
+
+.contact {
+	width: 190px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	/*align-items: center;
+	 flex-wrap: wrap; */
+}
+
+.infos_contact {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	line-height: 35px;
+	/*margin-top: 80px;
+	 margin-bottom: 30px; */
+}
+
+.titre_infos_contacts {
+	width: 190px;
+	display: flex;
+	/* align-items: start; */
+}
+
+/* .nom_prenom {
+}
+	margin-bottom: 20px; */
+.logo_rose{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adresse {
+	line-height: 18px;
+}
+
+.reseaux_sociaux {
+	display: flex;
+	margin-top: 15px;
+    margin-bottom: 20px;
+	/* align-items: center;  */
+}
+
+.icone_fb {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+    
+	/* display: flex; */
+
+}
+
+.icone_insta {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	/* display: flex; */
+}
+
+.buttonform {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    display: flex;
+align-content: center;
+
+}
+
+.button_blanc{
+    background-color: #E6C7C2;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+	width: 225px;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+}
+
+
+.button {
+	background-color: #fff;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	color: #E6C7C2;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+	width: 225px;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	.color_footer {
+		flex-direction: column;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.logo_rose {
+		margin-left: 130px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.contact {
+		margin-left: 210px;
+		margin-top: 5px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.trait {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.bouton_contact {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.buttonform {
+		margin-top: 50px;
+	}
+
+}
+
