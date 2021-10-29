@@ -16,9 +16,35 @@
     padding-left: 20vh;
 }
 
-.logo {
-    padding-left: 5vh;
+ .logo{
+    margin-right: 5vh;
+    position: relative;
+    display: inline-block;
+   
 }
+
+.format{
+    border-radius: 100px;
+    width: 25%;
+    margin-left:20vh;
+
+}
+.logo .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0px 0px 12px -3px gray;
+  
+    
+
+}
+.logo:hover .img-top{
+    display:inline;
+    
+   
+} 
 
 .nav__wrapper {
     padding-right: 20vh;
@@ -138,10 +164,9 @@
     background: url("../src/images/robeNoire.jpg") no-repeat;
     background-size: cover;
     display: flex;
-    /* width: 78%; */
+  
     background-size: 70%;
-    /* position: absolute; */
-    /* background-color: grey; */
+    
 }
 
 .colonegauche {
@@ -184,6 +209,11 @@
 
 /*...................H2....................*/
 
+.titreH3 {
+    text-align: center;
+    justify-content: center;
+}
+
 h3 {
     font-family: "Sansation_regular";
     font-size: 20px;
@@ -191,7 +221,6 @@ h3 {
 
 
 /*caroussel*/
-
 html,
 body,
 main {
@@ -200,6 +229,164 @@ main {
     margin: 0;
     padding: 0;
 }
+.gallery {
+    width: 100%;
+  }
+  
+  .gallery-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+  }
+  
+  .gallery-item {
+    height: 60%;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 20%;
+    z-index: 0;
+  }
+  
+  .gallery-item-1 {
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item-2,
+  .gallery-item-4 {
+    height: 80%;
+    opacity: 1;
+    width: 30%;
+    z-index: 1;
+  }
+  
+  .gallery-item-2 {
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item-3 {
+    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); */
+    height: 100%;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    z-index: 2;
+  }
+  
+  .gallery-item-4 {
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item-5 {
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .gallery-controls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 0 12px;
+    text-transform: capitalize;
+  }
+  
+  .gallery-controls button:focus {
+    outline: none;
+  }
+  
+  .gallery-controls-previous {
+    position: relative;
+  }
+  
+  .gallery-controls-previous::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    left: -10px;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 4px;
+  }
+  
+  .gallery-controls-previous:hover::before {
+    left: -18px;
+  }
+  
+  .gallery-controls-next {
+    position: relative;
+  }
+  
+  .gallery-controls-next::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    padding: 2px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 4px;
+  }
+  
+  .gallery-controls-next:hover::before {
+    right: -18px;
+  }
+  
+  .gallery-nav {
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .gallery-nav li {
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+  }
+  
+  .gallery-nav li.gallery-item-selected {
+    background: #555;
+  }
+
+
+
+
+
+
+
+/* 
+
 
 .carousselrea {
     display: flex;
@@ -208,26 +395,20 @@ main {
     justify-content: center;
     background-color: #e5e5e5;
     width: auto;
-    height: auto;
+    height: 200vh;
 }
 
 #carousel {
     width: 80%;
     position: relative;
-    height: 70vh;
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
+    height: 100%;
+ 
     overflow: hidden;
     margin-top: 5vh;
-    /* margin-bottom: 5vh; */
+  
 }
 
 
-/* .boxshadow {
-    width: 400px;
-    height: 400px;
-    box-shadow: rgb(65, 65, 65) -5px 5px 25px 5px;
-} */
 
 #carousel div {
     position: absolute;
@@ -239,9 +420,9 @@ main {
 }
 
 .border_radius {
-    /* padding: 10px; */
+   
     border-radius: 10px 10px 10px 10px !important;
-    height: 60%;
+    height:40%;
     box-shadow: rgb(65, 65, 65) 0px 15px 10px -18px;
 }
 
@@ -254,15 +435,7 @@ main {
 }
 
 
-/* .carousselrea #carousel div div {
-    display: unset;
-} */
 
-
-/* #carousel div img {
-    width: 400px;
-    transition: width 1s;
-} */
 
 .card_caroussel {
     width: 300px;
@@ -345,9 +518,6 @@ main {
     position: relative;
     margin-top: -3%;
     margin-bottom: 5vh;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    /* bottom: 10px; */
 }
 
 #prev {
@@ -368,7 +538,7 @@ main {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 0px 0px 10px 10px;
-}
+} */
 
 
 /* container 3 patchwork */
@@ -376,7 +546,7 @@ main {
 .container3 {
     display: flex;
     width: 100%;
-    height: 75vh;
+    height: 100%;
     background-color: #E6C7C2;
     justify-content: space-around;
     align-items: center;
@@ -399,7 +569,7 @@ main {
     display: flex;
     flex-direction: column;
     /* position: absolute; */
-    width: 60%;
+    width: 65%;
     left: 2%;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -411,7 +581,7 @@ main {
     grid-row-gap: 10px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    height: 50vh;
+    height: 80vh;
 }
 
 .box1 {
@@ -569,7 +739,9 @@ main {
 
 .buttonform {
     display: flex;
-    justify-content: center;
+                justify-content: center;
+                
+                margin-bottom: 3vh;
 }
 
 .button {
@@ -583,12 +755,13 @@ main {
     font-size: 20px;
     cursor: pointer;
     width: 225px;
-    height: 40px;
+    height: 30px;
     text-align: center;
     padding-top: 7px;
 }
 
-h2 {
+.h2 {
+    text-align: center;
     width: 100%;
     font-family: "Sansation_regular";
     font-size: 20px;
@@ -598,11 +771,325 @@ h2 {
     margin: 20px;
 }
 
+.h2_2 {
+    text-align: center;
+    width: 100%;
+    font-family: "Sansation_regular";
+    font-size: 20px;
+    height: auto;
+    right: 0%;
+
+    margin: 20px;
+}
+
 .textcolor {
     color: white;
     margin: 20px;
     text-align: justify;
 }
 
+.textcolor_2 {
+    
+    margin: 20px;
+    text-align: justify;
+}
+
 
 /*# sourceMappingURL=stylerea.css.map */
+
+/* container 5 */
+
+
+.container5 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    
+    align-items: center;
+}
+
+.article4 {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    width: 75%;
+    left: 2%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+}
+
+         /*........patchwork..................*/
+            
+         .patchwork_2 {
+            display: flex;
+            flex-direction: column;
+            /* position: absolute; */
+            width: 100%;
+            height: 100%;
+            left: 2%;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        
+        .wrapper_grid_2 {
+            display: grid;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 90vh;
+        }
+        
+        .box1_2 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: darksalmon;
+            background-image: url("../src/images/patchwork.jpg");
+        }
+        
+        .box2_2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            /* background-color: hotpink; */
+            background-image: url("../src/images/filetRose.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .box3_2 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background-image: url("../src/images/materielRecycle.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: green;
+        }
+        
+        .box4_2 {
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            background-image: url("../src/images/pantalonRose.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: yellow;
+        }
+        
+        .box5_2 {
+            grid-column-start: 7;
+            grid-column-end: 9;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            background-image: url("../src/images/robeFleurs.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: blue;
+        }
+        
+        .box6_2 {
+            grid-column-start: 3;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            background-image: url("../src/images/masqueVert.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: white;
+        }
+        
+        .box7_2 {
+            grid-column-start: 6;
+            grid-column-end: 9;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-image: url("../src/images/tissus.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: darkviolet;
+        }
+
+.recycling{
+    width: 45%;
+    padding: 20px;
+}
+
+ /* Footer */
+            .color_footer {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background: #E6C7C2;
+                color: #ffffff;
+                /* flex-wrap: wrap; */
+            }
+            
+            .img_logo_rose {
+                display: flex;
+                justify-content: center;
+                /* margin-left: 25px;
+                margin-right: 70px; */
+            }
+            
+            .trait {
+                width: 15px;
+                height: 220px;
+                margin-top: 50px;
+                margin-right: 50px;
+                border-left: white solid 4px;
+            }
+            
+            .contact {
+                width: 190px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                /*align-items: center;
+                 flex-wrap: wrap; */
+            }
+            
+            .infos_contact {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                line-height: 35px;
+                /*margin-top: 80px;
+                 margin-bottom: 30px; */
+            }
+            
+            .titre_infos_contacts {
+                width: 190px;
+                display: flex;
+                /* align-items: start; */
+            }
+            
+            /* .nom_prenom {
+            }
+                margin-bottom: 20px; */
+            .logo_rose{
+                width: 36%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .adresse {
+                line-height: 18px;
+            }
+            
+            .reseaux_sociaux {
+                display: flex;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                /* align-items: center;  */
+            }
+            
+            .icone_fb {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                
+                /* display: flex; */
+            
+            }
+            
+            .icone_insta {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                /* display: flex; */
+            }
+            
+            .buttonform {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                display: flex;
+            align-content: center;
+            
+            }
+            
+            .button_blanc{
+                background-color: #E6C7C2;
+                border: none;
+                border-radius: 20px 20px 20px 20px;
+                color: #FFFFFF;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                cursor: pointer;
+                width: 225px;
+                height: 30px;
+                text-align: center;
+                padding-top: 7px;
+            }
+            
+            
+            .button {
+                background-color: #fff;
+                border: none;
+                border-radius: 20px 20px 20px 20px;
+                color: #E6C7C2;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                cursor: pointer;
+                width: 225px;
+                height: 30px;
+                text-align: center;
+                padding-top: 7px;
+            }
+            
+            
+            
+            
+            @media screen and (max-width: 767px) {
+                .color_footer {
+                    flex-direction: column;
+                    height: auto;
+                }
+            }
+            
+            @media screen and (max-width: 767px) {
+                .logo_rose {
+                    margin-left: 130px;
+                }
+            
+            }
+            
+            @media screen and (max-width: 767px) {
+                .contact {
+                    margin-left: 210px;
+                    margin-top: 5px;
+                }
+            
+            }
+            
+            @media screen and (max-width: 767px) {
+                .trait {
+                    display: none;
+                }
+            
+            }
+            
+            @media screen and (max-width: 767px) {
+                .bouton_contact {
+                    display: none;
+                }
+            
+            }
+            
+            @media screen and (max-width: 767px) {
+                .buttonform {
+                    margin-top: 50px;
+                }
+            
+            }
