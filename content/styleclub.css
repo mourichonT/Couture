@@ -341,15 +341,22 @@ h3 {
 	text-align: center;
 	font-family: "Sansation";
 }
+/* @media screen and (max-width: 767px) {
+	
+	.zone_presidente {
+	margin-top: 20px;}
+} */
 /* fin titre présidente */
 
 /* placement de la card centrale */
 .block_centre {
 	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+	margin-bottom: 80px;
 	flex-wrap: wrap;
-	
-	
 }
+
  @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px){
 	.block_centre {
 		display: flex;
@@ -382,7 +389,7 @@ h3 {
 .card {
 	width: 500px;
 	height: 250px;
-	margin-left: 100px;
+	/* margin-left: 100px; */
 	background: white;
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: grey -5px 5px 25px 5px;
@@ -448,12 +455,18 @@ h3 {
 
 .font {
 	margin-left: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/* text-align: center; */
+	font-family: "Sansation";
 }
+@media screen and (max-width: 767px) {
+	.font {
+margin-left: 10px;
+margin-bottom: 10px;
 
-.font_centre {
-	margin-left: 30px;
+	}
 }
-
 
 
 /* Section notre atelier  */
@@ -463,10 +476,14 @@ h3 {
 
 .atelier {
 	display: flex;
-
 	width: auto;
 	height: 1000px;
 	flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+	.atelier {
+height: auto;
+	}
 }
 
 .photo_texte-atelier1 {
@@ -475,14 +492,29 @@ h3 {
 	padding-top: 50px;
 	flex-wrap: wrap;
 }
+@media screen and (max-width: 767px) {
+	.photo_texte-atelier1 {
+		width: 400px;
+		text-align: center;
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+}
 
 .texte_1 {
 	width: 600px;
-	/* height: 180px; */
 	margin-left: 50px;
 	line-height: 35px;
 	margin-top: 50px;
 	font-family: "Sansation";
+}
+@media screen and (max-width: 767px) {
+	.texte_1 {
+		width: 400px;
+		text-align: center;
+		margin-left: 5px;
+		margin-top: 20px;
+	}
 }
 
 .bgc-white {
@@ -500,10 +532,23 @@ h3 {
 	width: 100%;
 	flex-wrap: wrap;
 }
+@media screen and (max-width: 767px) {
+	.photo_texte-atelier2 {
+		width: 400px;
+		text-align: center;
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+}
 
 .photo_atelier {
-	width: 400px;
+	width: 500px;
 	border-radius: 20px 20px 20px 20px;
+}
+@media screen and (max-width: 767px) {
+	.photo_atelier {
+		width: 400px;
+	}
 }
 
 .texte_2 {
@@ -512,6 +557,14 @@ h3 {
 	line-height: 35px;
 	text-align: end;
 	font-family: "Sansation";
+}
+@media screen and (max-width: 767px) {
+	.texte_2 {
+		width: 400px;
+		text-align: center;
+		margin-left: 5px;
+		margin-top: 20px;
+	}
 }
 
 /*Fin section notre atelier */
@@ -620,7 +673,7 @@ h3 {
 
 @media screen and (max-width: 767px) {
 	.logo_rose {
-		margin-left: 130px;
+		margin-left: 120px;
 	}
 
 }

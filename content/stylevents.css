@@ -153,16 +153,43 @@ table {
 body {
 	background-color: #F1F2F4;
 }
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 4%;
+	padding-bottom: 3%;
+}
 
-/* Début nav */
+
+/* NAV */
+
 .brand {
 	font-weight: bold;
 	font-size: 20px;
 	padding-left: 20vh;
 }
+.logo{
+	margin-right: 5vh;
+	position: relative;
+	display: inline-block;
+}
 
-.logo {
-	padding-left: 5vh;
+.format{
+	border-radius: 100px;
+	width: 25%;
+	margin-left:20vh;
+
+}
+.logo .img-top {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	box-shadow: 0px 0px 12px -3px gray;
+}
+.logo:hover .img-top{
+	display:inline;
 }
 
 .nav__wrapper {
@@ -187,8 +214,7 @@ body {
 .site-header__wrapper {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	/* box-shadow: 0px 0px 33px 0px black; */
-	box-shadow: 0px 0px 33px 0px rgb(167, 163, 163);
+	box-shadow: 0px 0px 33px 0px black;
 	position: relative;
 	z-index: 2;
 }
@@ -224,7 +250,6 @@ body {
 		transform: translateY(-100%);
 		transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 	}
-
 	.nav__wrapper.active {
 		visibility: visible;
 		opacity: 1;
@@ -252,7 +277,7 @@ body {
 		top: 1rem;
 	}
 }
-/* Fin de la nav */
+/* FIN NAV */
 
 
 /* Début présentation des évènements */
@@ -275,20 +300,6 @@ body {
 	}	
 }
 
-h2 {
-	text-align: center;
-	font-size: 1.5em;
-	padding-top: 4%;
-	padding-bottom: 3%;
-}
-.atelier {
-	width: auto;
-} 
-@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px){
-	.atelier {
-		width: auto;
-	}
-}
 .titre_events {
 	margin-bottom: 50px;
 }
@@ -305,7 +316,7 @@ h2 {
 		margin-right: 15px;
 	}
 }
-/* FIN */
+/* FIN présentation des évènements*/
 
 
 /* bouton 'voir l'evènement' */
@@ -315,11 +326,12 @@ h2 {
 	margin-top: 25px;
 }
 
+
 .button {
 	background-color: #E6C7C2;
 	border: none;
 	border-radius: 20px 20px 20px 20px;
-	color: white;
+	color: #fff;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 20px;
@@ -327,9 +339,9 @@ h2 {
 	width: 225px;
 	height: 30px;
 	text-align: center;
-	padding-top: 7px;
+	padding-top: 7px; 
 }
-/* FIN */
+/* FIN bouton 'voir l'evènement' */
 
 /* titre qui sépare les style d'atelier */
 .zone_atelier {
@@ -343,15 +355,23 @@ h2 {
 		margin-top: 30px;
 	}
 }
-/* FIN */
+/* FIN titre qui sépare les style d'atelier */
 
+.atelier {
+	width: auto;
+} 
+@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px){
+	.atelier {
+		width: auto;
+	}
+}
 
 /* dates/lieu/themes en gras */
 .bold {
 	font-weight: bold;
 	margin-left: 50px;
 }
-/* FIN */
+/* FIN dates/lieu/themes en gras*/
 
 
 /* position date/lieu */
@@ -359,7 +379,7 @@ h2 {
 	padding-top: 20px;
 	margin-bottom: 10px;
 }
-/* FIN */
+/* FIN position date/lieu*/
 
 /* alignement date/lieu */
 .texte_lieu_div {
@@ -371,11 +391,9 @@ h2 {
 	.texte_lieu_div{
 		display: flex;
 		flex-direction: column;		
-		margin-left: 100px;
-		/* margin-right: 15px; */
+		margin-left: 25%;
 	}
 }
-
 
 .texte_lieu {
 	padding-top: 20px;
@@ -391,18 +409,13 @@ h2 {
 	padding-top: 20px; 
     margin-bottom: 10px;
 }
- @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.themeTexte {
 		display: flex;
 		flex-direction: column;	
-		/* margin-left: 100px; */
-		/* margin-right: 15px; */
 	} 
- }
-/* fin position theme et texte*/
+}
 
-
-/* position theme et texte */
 .texteLorem {
 	text-align: center;
 	margin-left: 50px;	
@@ -411,19 +424,17 @@ h2 {
 	padding-top: 3px;
 	line-height: 30px;
 	text-align: center;
-	/* margin-right: 150px; */
 }
 
 .bold_theme {
 	padding-top: 9px;
-	margin-bottom: 10px;
+	margin-bottom: 10px
 }
- @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.bold_theme {
-		margin-left: 165px;
+		margin-left: 45%;
 	}
 }   
-
 /* fin position theme et texte */
 
 
@@ -440,9 +451,6 @@ h2 {
 	box-shadow: rgb(167, 163, 163) -5px 5px 25px 5px;
 	font-family: "Sansation";
 }
-/* fin container article qui presente 1 evènement */
-
-
 
 @media screen and (max-width: 767px) {
 	.presentation_events {
@@ -452,8 +460,9 @@ h2 {
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: rgb(167, 163, 163) -5px 5px 25px 5px;
 	}
-
 }
+/* fin container article qui presente 1 evènement */
+
 
 /* image seule */
 .img_events {
@@ -461,7 +470,7 @@ h2 {
 	height: 180px;
 	border-radius: 20px 20px 20px 20px;
 }
-/* fin */
+/* fin image seule*/
 
 /* bloc 3 images */
 .imgEvents {
@@ -471,21 +480,22 @@ h2 {
 	margin-top: 40px;
 	margin-bottom: auto;
 }
-/* fin */
 
 @media screen and (max-width: 767px) {
 	.img_events {
 		margin-top: 30px;
+	}
 }
+/* fin bloc 3 images*/
 
-/*Début footer*/
+
+/* FOOTER */
 .color_footer {
 	display: flex;
 	width: 100%;
 	height: 310px;
 	background: #E6C7C2;
 	color: #ffffff;
-	/* flex-wrap: wrap; */
 }
 
 .img_logo_rose {
@@ -546,7 +556,7 @@ h2 {
 	cursor: pointer;
 }
 
-.buttonform {
+.buttonform_1 {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -554,7 +564,7 @@ h2 {
 	flex-wrap: wrap;
 }
 
-.button {
+.button_1 {
 	background-color: #fff;
 	border: none;
 	border-radius: 20px 20px 20px 20px;
@@ -581,14 +591,14 @@ h2 {
 
 @media screen and (max-width: 767px) {
 	.logo_rose {
-		margin-left: 130px;
+		margin-left: 60px;
 	}
 
 }
 
 @media screen and (max-width: 767px) {
 	.contact {
-		margin-left: 210px;
+		margin-left: 130px;
 		margin-top: 5px;
 	}
 
@@ -609,12 +619,11 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-	.buttonform {
-		margin-top: 50px;
+	.buttonform_1 {
+		margin-top: 25px;
 		margin-bottom: 20px;
 	}
 
 }
 
 
-/* Fin du footer */
