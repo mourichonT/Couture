@@ -168,9 +168,9 @@ body {
     margin-left: 40%;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .patchwork {
-    margin-left:10%;
+        margin-left: 10%;
     }
 }
 
@@ -268,10 +268,11 @@ body {
 
 @media screen and (max-width: 767px) {
     .renseignement {
-    width: 450px; 
-    margin-left: 40%;
+        width: 450px;
+        margin-left: 40%;
+    }
 }
-}
+
 .case {
     margin-top: 10px;
     padding-top: 5px;
@@ -299,9 +300,10 @@ body {
 .image {
     margin-left: 35%;
 }
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 767px) {
     .image {
-    margin-left: -15%;
+        margin-left: -15%;
     }
 }
 

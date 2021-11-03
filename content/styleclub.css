@@ -360,7 +360,7 @@ h3 {
 }
 
 
- @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px){
+@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px) {
 
 	.block_centre {
 		display: flex;
@@ -466,18 +466,19 @@ h3 {
 	/* text-align: center; */
 	font-family: "Sansation";
 }
-@media screen and (max-width: 767px) {
-	.font {
-margin-left: 10px;
-margin-bottom: 10px;
-
 
 @media screen and (max-width: 767px) {
 	.font {
 		margin-left: 10px;
 		margin-bottom: 10px;
-	}
-}
+
+
+		@media screen and (max-width: 767px) {
+			.font {
+				margin-left: 10px;
+				margin-bottom: 10px;
+			}
+		}
 
 
 	}
@@ -494,9 +495,10 @@ margin-bottom: 10px;
 	height: 1000px;
 	flex-wrap: wrap;
 }
+
 @media screen and (max-width: 767px) {
 	.atelier {
-height: auto;
+		height: auto;
 	}
 }
 
@@ -512,6 +514,7 @@ height: auto;
 	padding-top: 50px;
 	flex-wrap: wrap;
 }
+
 @media screen and (max-width: 767px) {
 	.photo_texte-atelier1 {
 		width: 400px;
@@ -537,6 +540,7 @@ height: auto;
 	margin-top: 50px;
 	font-family: "Sansation";
 }
+
 @media screen and (max-width: 767px) {
 	.texte_1 {
 		width: 400px;
@@ -570,6 +574,7 @@ height: auto;
 	width: 100%;
 	flex-wrap: wrap;
 }
+
 @media screen and (max-width: 767px) {
 	.photo_texte-atelier2 {
 		width: 400px;
@@ -592,6 +597,7 @@ height: auto;
 	width: 500px;
 	border-radius: 20px 20px 20px 20px;
 }
+
 @media screen and (max-width: 767px) {
 	.photo_atelier {
 		width: 400px;
@@ -611,6 +617,7 @@ height: auto;
 	text-align: end;
 	font-family: "Sansation";
 }
+
 @media screen and (max-width: 767px) {
 	.texte_2 {
 		width: 400px;
