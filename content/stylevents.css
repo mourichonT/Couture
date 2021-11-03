@@ -153,7 +153,6 @@ table {
 body {
 	background-color: #F1F2F4;
 }
-
 h2 {
 	text-align: center;
 	font-size: 1.5em;
@@ -164,11 +163,32 @@ h2 {
 
 /* NAV */
 
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 4%;
+	padding-bottom: 3%;
+}
+
+
+/* NAV */
 .brand {
 	font-weight: bold;
 	font-size: 20px;
 	padding-left: 20vh;
 }
+.logo{
+	margin-right: 5vh;
+	position: relative;
+	display: inline-block;
+}
+
+.format{
+	border-radius: 100px;
+	width: 25%;
+	margin-left:20vh;
+
 
 .logo {
 	margin-right: 5vh;
@@ -192,9 +212,10 @@ h2 {
 	box-shadow: 0px 0px 12px -3px gray;
 }
 
+
 .logo:hover .img-top {
 	display: inline;
-}
+
 
 .nav__wrapper {
 	padding-right: 20vh;
@@ -254,7 +275,6 @@ h2 {
 		transform: translateY(-100%);
 		transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 	}
-
 	.nav__wrapper.active {
 		visibility: visible;
 		opacity: 1;
@@ -348,7 +368,7 @@ h2 {
 	width: 225px;
 	height: 30px;
 	text-align: center;
-	padding-top: 7px;
+	padding-top: 7px; 
 }
 
 /* FIN bouton 'voir l'evènement' */
@@ -369,11 +389,9 @@ h2 {
 
 /* FIN titre qui sépare les style d'atelier */
 
-.atelier {
-	width: auto;
-}
 
-@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px) {
+/* FIN titre qui sépare les style d'atelier */
+@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px){
 	.atelier {
 		width: auto;
 	}
@@ -430,8 +448,8 @@ h2 {
 @media screen and (max-width: 767px) {
 	.themeTexte {
 		display: flex;
-		flex-direction: column;
-	}
+		flex-direction: column;	
+	} 
 }
 
 .texteLorem {
@@ -448,12 +466,12 @@ h2 {
 	padding-top: 9px;
 	margin-bottom: 10px
 }
-
 @media screen and (max-width: 767px) {
 	.bold_theme {
 		margin-left: 45%;
 	}
 }
+
 
 /* fin position theme et texte */
 
@@ -481,6 +499,8 @@ h2 {
 		box-shadow: rgb(167, 163, 163) -5px 5px 25px 5px;
 	}
 }
+/* fin container article qui presente 1 evènement */
+
 
 /* fin container article qui presente 1 evènement */
 
@@ -508,7 +528,6 @@ h2 {
 		margin-top: 30px;
 	}
 }
-
 /* fin bloc 3 images*/
 
 
@@ -646,5 +665,5 @@ h2 {
 		margin-top: 25px;
 		margin-bottom: 20px;
 	}
-
 }
+
