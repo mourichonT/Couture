@@ -153,6 +153,7 @@ table {
 body {
 	background-color: #F1F2F4;
 }
+
 h2 {
 	text-align: center;
 	font-size: 1.5em;
@@ -168,18 +169,20 @@ h2 {
 	font-size: 20px;
 	padding-left: 20vh;
 }
-.logo{
+
+.logo {
 	margin-right: 5vh;
 	position: relative;
 	display: inline-block;
 }
 
-.format{
+.format {
 	border-radius: 100px;
 	width: 25%;
-	margin-left:20vh;
+	margin-left: 20vh;
 
 }
+
 .logo .img-top {
 	display: none;
 	position: absolute;
@@ -188,8 +191,9 @@ h2 {
 	z-index: 99;
 	box-shadow: 0px 0px 12px -3px gray;
 }
-.logo:hover .img-top{
-	display:inline;
+
+.logo:hover .img-top {
+	display: inline;
 }
 
 .nav__wrapper {
@@ -250,6 +254,7 @@ h2 {
 		transform: translateY(-100%);
 		transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 	}
+
 	.nav__wrapper.active {
 		visibility: visible;
 		opacity: 1;
@@ -277,6 +282,7 @@ h2 {
 		top: 1rem;
 	}
 }
+
 /* FIN NAV */
 
 
@@ -290,14 +296,15 @@ h2 {
 	box-shadow: rgb(167, 163, 163) -5px 5px 25px 5px;
 	font-family: "Sansation";
 }
+
 @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px) {
-	.presentation{
+	.presentation {
 		width: auto;
 		height: auto;
 		text-align: center;
 		background-color: #F1F2F4;
 		box-shadow: rgb(167, 163, 163)-1px 1px 15px 1px;
-	}	
+	}
 }
 
 .titre_events {
@@ -310,12 +317,14 @@ h2 {
 	line-height: 30px;
 	text-align: center;
 }
+
 @media screen and (max-width: 767px) {
-	.texte_evenement{
+	.texte_evenement {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
 }
+
 /* FIN présentation des évènements*/
 
 
@@ -339,8 +348,9 @@ h2 {
 	width: 225px;
 	height: 30px;
 	text-align: center;
-	padding-top: 7px; 
+	padding-top: 7px;
 }
+
 /* FIN bouton 'voir l'evènement' */
 
 /* titre qui sépare les style d'atelier */
@@ -350,17 +360,20 @@ h2 {
 	text-align: center;
 	font-family: "Sansation";
 }
+
 @media screen and (max-width: 767px) {
 	.zone_atelier {
 		margin-top: 30px;
 	}
 }
+
 /* FIN titre qui sépare les style d'atelier */
 
 .atelier {
 	width: auto;
-} 
-@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px){
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1280px) {
 	.atelier {
 		width: auto;
 	}
@@ -371,6 +384,7 @@ h2 {
 	font-weight: bold;
 	margin-left: 50px;
 }
+
 /* FIN dates/lieu/themes en gras*/
 
 
@@ -379,18 +393,20 @@ h2 {
 	padding-top: 20px;
 	margin-bottom: 10px;
 }
+
 /* FIN position date/lieu*/
 
 /* alignement date/lieu */
 .texte_lieu_div {
 	display: flex;
-	padding-top: 20px; 
-    margin-bottom: 10px;
+	padding-top: 20px;
+	margin-bottom: 10px;
 }
+
 @media screen and (max-width: 767px) {
-	.texte_lieu_div{
+	.texte_lieu_div {
 		display: flex;
-		flex-direction: column;		
+		flex-direction: column;
 		margin-left: 25%;
 	}
 }
@@ -400,25 +416,27 @@ h2 {
 	margin-bottom: 10px;
 	margin-left: 13px;
 }
+
 /* fin alignement date/lieu  */
 
 
 /* position theme et texte */
 .themeTexte {
 	display: flex;
-	padding-top: 20px; 
-    margin-bottom: 10px;
+	padding-top: 20px;
+	margin-bottom: 10px;
 }
+
 @media screen and (max-width: 767px) {
 	.themeTexte {
 		display: flex;
-		flex-direction: column;	
-	} 
+		flex-direction: column;
+	}
 }
 
 .texteLorem {
 	text-align: center;
-	margin-left: 50px;	
+	margin-left: 50px;
 	margin-right: 50px;
 	margin-bottom: 10px;
 	padding-top: 3px;
@@ -430,11 +448,13 @@ h2 {
 	padding-top: 9px;
 	margin-bottom: 10px
 }
+
 @media screen and (max-width: 767px) {
 	.bold_theme {
 		margin-left: 45%;
 	}
-}   
+}
+
 /* fin position theme et texte */
 
 
@@ -454,13 +474,14 @@ h2 {
 
 @media screen and (max-width: 767px) {
 	.presentation_events {
-	background: #F1F2F4;
-	width: auto;
-	height: auto;
-	border-radius: 20px 20px 20px 20px;
-	box-shadow: rgb(167, 163, 163) -5px 5px 25px 5px;
+		background: #F1F2F4;
+		width: auto;
+		height: auto;
+		border-radius: 20px 20px 20px 20px;
+		box-shadow: rgb(167, 163, 163) -5px 5px 25px 5px;
 	}
 }
+
 /* fin container article qui presente 1 evènement */
 
 
@@ -470,6 +491,7 @@ h2 {
 	height: 180px;
 	border-radius: 20px 20px 20px 20px;
 }
+
 /* fin image seule*/
 
 /* bloc 3 images */
@@ -486,6 +508,7 @@ h2 {
 		margin-top: 30px;
 	}
 }
+
 /* fin bloc 3 images*/
 
 
@@ -625,5 +648,3 @@ h2 {
 	}
 
 }
-
-
